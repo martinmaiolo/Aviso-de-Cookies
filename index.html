@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#383b75"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "type": "opt-in",
+  "content": {
+    "message": "This website respects your privacy by adhering to international regulations. We may use your personal data for analytics, testing, personalisation, conversion tracking, marketing automation, remarketing, and advertising for as long as you consent in line with our policies. We never sell your data.",
+    "dismiss": "Decline",
+    "allow": "Accept",
+    "link": "View Our Policies",
+    "href": "https://example.com/privacy-policy/"
+  },
+  "cookie": {
+    "domain": ".example.com"
+  },
+  "revokable": "true"
+})});
+</script>
